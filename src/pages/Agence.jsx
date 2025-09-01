@@ -32,7 +32,7 @@ useGSAP(() => {
       scrollTrigger: {  // Note: lowercase 's' in scrollTrigger
         trigger: imageDivRef.current,
         start: "top 5%",
-        end: "top -97%",
+        end: "top -75%",
         pin: true,
         scrub: true,
         toggleActions: "play none none reverse",
@@ -51,22 +51,22 @@ useGSAP(() => {
   })
   return (
     <div>
-    <div className="relative section1">
+    <div className="relative section1 py-1">
       <div ref={imageDivRef} className='h-[25vw] w-[20vw] rounded-2xl absolute top-[7vw] left-[30vw] z-10 overflow-hidden'>
         <img ref={imageRef}
           src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" 
           alt="Team member" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover select-none"
         />
       </div>
       <div className='font-[font1] min-h-screen relative'>
-        <div className='absolute top-1/2 w-full z-20'>
-          <h1 className='text-[19vw] text-center uppercase leading-[15vw]'>
+        <div className='absolute top-1/2 w-full z-15'>
+          <h1 className='text-[19vw] text-center uppercase leading-[15vw] select-none'>
             Soixan7e <br/>
             Douze
           </h1>
           <div className='mt-8 w-full flex justify-end pr-8'>
-            <p className='text-3xl w-1/2 text-right leading-snug'>
+            <p className='text-3xl w-1/2 text-right leading-snug select-none'>
               We're inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.
             </p>
           </div>

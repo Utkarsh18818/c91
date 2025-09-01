@@ -4,10 +4,13 @@ import Home from './pages/Home';
 import Agence from './pages/Agence';
 import Projects from './pages/Projects';
 import './index.css';
+import Navbar from './components/navigation/Navbar';
+import FullScreenNav from './components/navigation/FullScreenNav';
 
 const App = () => {
   return (
-    <div className='text-white '>
+    <div>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />
